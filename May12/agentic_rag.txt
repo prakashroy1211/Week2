@@ -1,0 +1,9 @@
+Agentic Retrieval-Augmented Generation (Agentic RAG) is an evolution of the basic RAG framework that incorporates autonomous agents into the retrieval and reasoning process. Traditional RAG pipelines retrieve relevant documents and pass them to a language model to generate responses. However, Agentic RAG introduces multiple "agents" that can reason, plan, query iteratively, and collaborate to complete complex tasks.
+
+In Agentic RAG, each agent can have a defined role such as planner, retriever, analyzer, summarizer, or validator. These agents communicate with each other and with external tools such as vector databases, APIs, or long-term memory stores. This modular, multi-agent approach increases the system’s flexibility, explainability, and ability to handle intricate, multi-step problems.
+
+For example, in a research assistant application, one agent may identify research questions, another retrieves relevant literature, and another synthesizes findings. This decomposition mimics human workflows and allows better control over the reasoning path, error handling, and iterative refinement of outputs.
+
+Agentic RAG is particularly useful in enterprise AI, legal and academic research, customer support, and data-intensive applications where understanding, traceability, and control are essential. Frameworks like LangGraph and LangChain increasingly support Agentic RAG by providing agent orchestration, memory, and reasoning tools.
+
+By empowering LLMs with agents that can act autonomously, reason purposefully, and work together, Agentic RAG pushes the boundary of what AI systems can accomplish with retrieved knowledge.

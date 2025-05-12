@@ -1,0 +1,7 @@
+A vector database is a specialized type of database designed to store, index, and query high-dimensional vector embeddings. These embeddings are numerical representations of unstructured data like text, images, or audio that capture the semantic meaning of the input. Unlike traditional databases which handle structured data and query exact matches, vector databases are optimized for similarity search using algorithms like k-nearest neighbors (k-NN).
+
+Each record in a vector database is typically associated with a vector (e.g., a 512-dimensional embedding of a sentence) and optional metadata. When a user queries with another vector, the database retrieves items that are closest in vector space, using cosine similarity, Euclidean distance, or other similarity metrics.
+
+Vector databases are widely used in AI applications such as semantic search, recommendation systems, anomaly detection, and generative AI. They allow systems to search meaningfully through vast amounts of unstructured data. Modern tools such as ChromaDB, Pinecone, Weaviate, and FAISS provide scalable, high-performance vector storage and search capabilities.
+
+Because vector embeddings come from models like BERT or CLIP, vector databases serve as an important bridge between machine learning and retrieval systems. Their performance, scalability, and integration with LLMs have made them essential in modern Retrieval-Augmented Generation (RAG) architectures and other cognitive AI systems.
