@@ -1,6 +1,7 @@
 from chromadb import Client
 from chromadb.config import Settings
 
+# chromadb package didnt worked on the local machine so i used colab.
 # Initialize ChromaDB client with default settings (in-memory DB)
 client = Client(Settings())
 
