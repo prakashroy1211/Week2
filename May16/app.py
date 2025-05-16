@@ -20,8 +20,8 @@ assistant = autogen.AssistantAgent(
 )
 
 user_proxy = autogen.UserProxyAgent(
-    name="user_proxy",
-    human_input_mode="NEVER",
+    name='user_proxy',
+    human_input_mode='TERMINATE',
     max_consecutive_auto_reply=10,
     is_termination_msg=lambda x: x.get("content", "").rstrip().endswith("TERMINATE"),
     code_execution_config={"work_dir": "web", "use_docker": False},
