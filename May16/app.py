@@ -2,8 +2,9 @@ import autogen
 
 config_list = [
     {
-        'model': 'gpt-3.5-turbo',
-        'api_key': '#'
+        'model': 'gemini-2.0-flash',
+        'api_key': '#',
+        "api_type": "google",
     }
 ]
 
@@ -20,7 +21,7 @@ assistant = autogen.AssistantAgent(
 
 user_proxy = autogen.UserProxyAgent(
     name='user_proxy',
-    human_input_mode='TERMINATE',
+    human_input_mode='NEVER
     max_consecutive_auto_reply=10,
     is_termination_msg=lambda x: x.get('content', '').rstrip().endswith('TERMINATE'),
     code_execution_config={'work_dir': 'web',
