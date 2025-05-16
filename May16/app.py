@@ -3,7 +3,7 @@ import autogen
 config_list = [
     {
         'model': 'gemini-2.0-flash',
-        'api_key': 'AIzaSyAD13oak94zUmoKqdUbAF6zVVvm_xmJ1jU',
+        'api_key': '#',
         "api_type": "google",
     }
 ]
