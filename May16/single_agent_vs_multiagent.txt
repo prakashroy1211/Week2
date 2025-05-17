@@ -1,0 +1,34 @@
+Single-Agent RAG:
+-----------------
+- Architecture:
+  A single language model (agent) handles the entire task: querying a retriever, aggregating retrieved data, and generating the response.
+
+- Advantages:
+  1. Simplicity: Easier to deploy and manage.
+  2. Lower Latency: Fewer steps and components result in faster inference.
+  3. Resource Efficiency: Requires fewer compute resources.
+
+- Disadvantages:
+  1. Limited Specialization: One model may not excel at all subtasks (retrieval, synthesis, reasoning).
+  2. Scalability: Difficult to scale for complex workflows or large corpora.
+  3. Less Robust: A single point of failure for all tasks.
+
+Multi-Agent RAG:
+----------------
+- Architecture:
+  Multiple agents (models) with specialized roles (e.g., retriever, summarizer, reasoner) collaborate in a pipeline or iterative workflow.
+
+- Advantages:
+  1. Specialization: Each agent is fine-tuned for specific tasks, improving performance.
+  2. Modularity: Easy to upgrade or replace components independently.
+  3. Scalability: Can handle more complex queries and larger knowledge bases.
+  4. Robustness: Distributed responsibilities reduce single points of failure.
+
+- Disadvantages:
+  1. Complexity: Requires orchestration logic and communication protocols between agents.
+  2. Higher Latency: Multiple agents introduce processing delays.
+  3. More Resource Intensive: Demands more compute and memory.
+
+Conclusion:
+-----------
+Single-agent RAG is ideal for simple or low-latency use cases, while multi-agent RAG is suited for complex, large-scale, or high-accuracy scenarios requiring task-specific reasoning.
